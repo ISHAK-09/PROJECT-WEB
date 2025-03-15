@@ -1,0 +1,215 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    height: 100vh;
+}
+/*navbar:its the same navbar from homepage*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #8a2be2;
+    color: white;
+    padding: 12px 20px;
+}
+.logo span {
+    color: black;
+}
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 200px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: black;
+    transform: scale(1.1);
+}
+.icons img {
+    width: 26px;
+    height: 26px;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.icons img:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+/*form:i use flex to center the container that i use it to create another containes for the info and fo the form*/
+.container-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    position: relative;
+    width: 1100px;
+    height: 550px;
+    display: flex;
+    z-index: 1000;
+}
+/*containerinfo:i write my page contact info i give "child 1"to control img and disarm the color of the icons
+and give "child2" to control the information*/
+.container .contactinfo{
+    position: absolute;
+    background: #8a2be2;
+    top: 40px;
+    width: 350px;
+    height: calc(100% - 80px);
+    border-radius: 15px;
+    z-index: 1;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 4;
+}
+.container .contactinfo h2{
+    color: white;
+    font-size: 25px;
+    font-weight: 500px;
+}
+.container .contactinfo ul.info{
+    position: relative;
+    margin: 20px 0;
+    
+}
+.container .contactinfo ul.info li{
+    position: relative;
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+}
+.container .contactinfo ul.info li span:nth-child(1){
+    width: 30px;
+    min-width: 30px;
+}
+.container .contactinfo ul.info li span:nth-child(1) img{
+    max-width: 100%;
+    filter: invert();
+}
+.container .contactinfo ul.info li span:nth-child(2){
+    color: white;
+    margin-left: 15px;
+    font-weight: 300px;
+}
+/*containerform:for the form i do so many research to make the text do some nice moving 
+by useing transition and hover and focus and valid code it was a little hard */
+.container .contactform{
+    position: absolute;
+    padding: 70px 50px;
+    padding-left: 250px;
+    margin-left: 150px;
+    width: calc(100% - 150px);
+    height: 100%;
+    background: rgb(0, 0, 0);
+    border-radius: 15px;
+}
+.container .contactform h2{
+    margin-top: 40px;
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+
+}
+.container .contactform .boxform{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+.container .contactform .boxform .inbox{
+    position: relative;
+    margin-bottom: 35px;
+}
+.container .contactform .boxform .inbox.kk{
+    width: 40%;
+}
+.container .contactform .boxform .inbox.kkk{
+    width: 100%;
+}
+.container .contactform .boxform .inbox input,
+.container .contactform .boxform .inbox textarea{
+    width: 100%;
+    resize: none;
+    padding: 5px 0;
+    font-size: 20px;
+    color: rgb(42, 42, 42) ;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+    background: black;
+}
+.container .contactform .boxform .inbox textarea{
+    height: 100px;
+}
+.container .contactform .boxform .inbox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    pointer-events: none;
+    font-size: 18px;
+    font-weight: 300;
+    transition: 0.3s;
+    color: white;
+}
+.container .contactform .boxform .inbox input:focus ~ span,
+.container .contactform .boxform .inbox textarea:valid ~ span,
+.container .contactform .boxform .inbox input:valid ~ span,
+.container .contactform .boxform .inbox textarea:focus ~ span{
+transform: translateY(-20px);
+font-size: 12px;
+font-weight: 400;
+letter-spacing: 1px;
+}
+.container .contactform .boxform .inbox input[type="submit"]{
+    position: relative;
+    cursor: pointer;
+    background: #8a2be2;
+    color: white;
+    border:3px solid #8a2be2;
+    max-width: 150px;
+    padding: 15px;
+    border-radius: 10px;
+}
+.container .contactform .boxform .inbox input[type="submit"]:hover{
+    background: black;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #8a2be2;
+    color: white;
+    margin-top: 20px;
+    font-size: 16px;
+}

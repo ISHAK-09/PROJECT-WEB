@@ -1,0 +1,198 @@
+/* General Styles:i give font to my page and color to the body background*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    height: 100vh;
+}
+
+/* Navbar:i use span on "next" word to give it a color then i use transition and hover on logo and the links and the icons to make them moving nicely */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #8a2be2;
+    color: white;
+    padding: 12px 20px;
+}
+.logo span {
+    color: black;
+}
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 200px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: black;
+    transform: scale(1.1);
+}
+.icons img {
+    width: 26px;
+    height: 26px;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.icons img:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+/* Search:i make a div containe search bar and the search icon and i give search bar a transition and focus code to make the border shining
+and i give thee search icon transition and hover like the first icons  */
+.search-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background: white;
+}
+
+.search-container input {
+    width: 80%;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid rgb(0, 0, 0);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-container input:focus {
+    border-color: #8a2be2;
+    box-shadow: 0px 0px 10px rgba(138, 43, 226, 0.5);
+    outline: none;
+}
+.search img {
+    width: 26px;
+    height: 26px;
+    margin-left: 15px;
+    margin-top: 6px;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.search img:hover{
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+/* Banner:its just a cool banner */
+.banner{
+    width: 1920px;
+    height: 500px;
+    background-image: url(/images/banneree.webp);
+    background-size: cover;
+    background-position-y: -370px;
+}
+/* Products:i use a grid code to separate every product and give the dive of product a transition and hover
+and also give the images of the product a transition and hover */
+.products {
+    padding: 20px;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.product {
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 10px;
+    
+}
+.product h3 {
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.product p {
+    color: gray;
+}
+
+/* Buttons:i also use transition and hover code on butons */
+button {
+    background: white;
+    color: black;
+    border: 1px solid #8a2be2;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 15px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background: white;
+    transform: scale(1.1);
+}
+.product a{
+    background: #8a2be2;
+    color: black;
+    border: 1px solid #8a2be2;
+    padding: 8px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+    font-size: 13px;
+}
+.product a:hover{
+    background: white;
+    transform: scale(1.1);
+}
+
+/* Footer:simple footer  */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #8a2be2;
+    color: white;
+    margin-top: 20px;
+    font-size: 16px;
+}

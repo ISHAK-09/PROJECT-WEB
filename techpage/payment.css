@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    height: 100vh;
+}
+.container-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    gap: 30px;
+}
+/*navebar:same one of home page*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #8a2be2;
+    color: white;
+    padding: 12px 20px;
+}
+.logo span {
+    color: black;
+}
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 200px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: black;
+    transform: scale(1.1);
+}
+.icons img {
+    width: 26px;
+    height: 26px;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.icons img:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+/*payment form*/
+.container {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 15px;
+    width: 400px;
+    border: 1px solid black;
+}
+h2 {
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 15px;
+}
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid gray;
+    border-radius: 15px;
+}
+.card-info {
+    display: flex;
+    gap: 15px; 
+}
+
+.card-info div {
+    flex: 1; 
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 15px;
+}
+.finpay {
+    width: 100%;
+    padding: 10px;
+    background-color: #8a2be2;
+    color: black;
+    border: 1px solid #8a2be2;
+    border-radius: 15px;
+    font-size: 20px;
+    margin-top: 15px;
+}
+.finpay:hover {
+    background-color: #f4f4f4;
+}
+.order-summary {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 15px;
+    width: 200px;
+    border: 1px solid black;
+    align-self: flex-start;
+}
+.deco{
+    font-size: 16px;
+    color: #8a2be2;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #8a2be2;
+    color: white;
+    margin-top: 92px;
+    font-size: 16px;
+}

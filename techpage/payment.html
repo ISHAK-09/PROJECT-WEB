@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="/payment.css">
+</head>
+<body>
+     <!-- Navbar -->
+     <nav class="navbar">
+        <div class="logo"><span>NEXT</span>G STORE</div>
+        <ul class="nav-links">
+            <li><a href="Homepage.html">Home</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="contact.html">Contact US</a></li>
+        </ul>
+        <div class="icons">
+            <img src="/images/night-mode.png" alt="Dark Mode">
+            <img src="/images/grocery-store.png" alt="Cart">
+            <img src="/images/user.png" alt="Profile">
+        </div>
+    </nav>
+    <section class="container-items">
+     <div class="container">
+        <h2>All the information are required</h2>
+        <form>
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your full name" required>
+            
+            <label>Country/Region</label>
+            <input type="text" placeholder="Enter your country/region"required>
+            
+            <label>Address</label>
+            <input type="text" placeholder="Enter your address"required>
+            
+            <label>Phone Number</label>
+            <input type="text" placeholder="Enter your phone number"required>
+            
+            <label>Card Number</label>
+            <input type="text" placeholder="Enter your card number"required>
+            
+            <div class="card-info">
+                <div class="expiry">
+                    <label>Expiry (MM/YY)</label>
+                    <input type="text" placeholder="MM/YY" required>
+                </div>
+                <div class="security">
+                    <label>Security Code</label>
+                    <input type="text" placeholder="CCV 3-4 digits" required>
+                </div>
+            </div>
+
+            <label>Name on Card</label>
+            <input type="text" placeholder="First and last name"required>
+            
+            <label>Promotional Code</label>
+            <input type="text" placeholder="Enter code">
+            
+            <button class="finpay">Finish Payment</button>
+        </form>
+       
+     </div>
+     <div class="order-summary">
+        <h3>Order Summary</h3>
+        <p>Items: <strong>0</strong></p>
+        <hr>
+        <p class="deco">Order Total: $0.00</p>
+    </div>
+    </section>
+    <footer>
+        <p> 2025 NextG Store/Ui Ux/Web Challenge</p>
+    </footer>
+</body>
+</html>

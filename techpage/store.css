@@ -1,0 +1,134 @@
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+ body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    height: 100vh;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #8a2be2;
+    color: #f4f4f4;
+    padding: 12px 20px;
+}
+.logo span {
+    color: black;
+}
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 200px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #f4f4f4;
+    font-size: 22px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: black;
+    transform: scale(1.1);
+}
+.icons img {
+    width: 26px;
+    height: 26px;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.icons img:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+/*product*/
+.main{
+    margin:10px 0 15px 10px ;
+}
+h2 {
+    text-align: left;
+    margin:10px 0 15px 10px;
+}
+
+.category {
+    margin-bottom: 20px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.product {
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 15px;
+    border: black 1px solid;
+    text-align: center;
+    width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+.product img {
+    width: 100%;
+    border-radius: 10px;
+}
+button {
+    padding: 5px 10px;
+    margin: 5px;
+    border: #8a2be2 1px solid;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+button:hover{
+    background: white;
+    transform: scale(1.1);
+}
+.about {
+    background: white;
+    border: 1px solid #8a2be2;
+    color: black;
+}
+
+.buy {
+    background: #8a2be2;
+    color: black;
+}
+.buy a{
+    text-decoration: none;
+    color: black;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #8a2be2;
+    color: white;
+    margin-top: 20px;
+    font-size: 16px;
+}
